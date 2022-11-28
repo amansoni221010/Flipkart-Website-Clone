@@ -22,9 +22,6 @@ import { Box } from '@mui/system';
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import DetailVeiw from './MyComponents/details/DetailVeiw';
 
-
-
-// aman soni
 function App() {
 
 
