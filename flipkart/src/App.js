@@ -24,7 +24,7 @@ import DetailVeiw from './MyComponents/details/DetailVeiw';
 
 
 
-
+// aman soni
 function App() {
 
 
