@@ -1,8 +1,13 @@
 .foot{
-display: flex;
-text-align: center;
-justify-content: center;
-height: 10vh;
-background-color: black;
-color: white;
-}
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+  
+    background-color: #2874f0;
+font-weight: 600;
+font-size: 16px;
+    color: #ffffff;
+    width: 100%;
+    }

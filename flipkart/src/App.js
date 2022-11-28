@@ -1,26 +1,17 @@
 // import logo from './logo.svg';
 import './App.css';
 import Header from './MyComponents/Header';
-import Main from './MyComponents/Main';
-import Carts from './MyComponents/Carts';
-import Footer from './MyComponents/Footer';
+
 
 import React from "react";
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route
-  
-// } from "react-router-dom";
 
 
-import More from './MyComponents/Main'
-import Cart from './MyComponents/Cart';
 import Home from './MyComponents/home/Home';
 import { Box } from '@mui/system';
 
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import DetailVeiw from './MyComponents/details/DetailVeiw';
+import Footer from './MyComponents/Footer';
 
 function App() {
 
@@ -41,14 +32,12 @@ function App() {
         <Route path='/product/:id' element={<DetailVeiw/>}/>
         </Routes>
     </Box>
+   <Footer/>
     
 </BrowserRouter>
     
-    {/* <Main/> */}
-
-
-    {/* <Carts/> */}
-     {/* <Footer/> */}
+   
+  
     </>
   );
 }

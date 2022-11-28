@@ -114,6 +114,8 @@ export default function LoginDialog({open,setOpen}) {
 
         // here we have to call a api on the button click , and this api we have made inside the src forlder an inside the service
         let response = await authenticateSignup(signup); // this is a asynchronus function  and it comes inside the response
+        if(!response) return;
+        handleClose();
 
     }
 
