@@ -17,7 +17,6 @@ overflow: 'hidden',
 const Container=styled(Box)`
 padding: 12px 8px;
 text-align: center;
-
 `
 // in typography it convert the margin and padding to 0
 const text=styled(Typography)`
