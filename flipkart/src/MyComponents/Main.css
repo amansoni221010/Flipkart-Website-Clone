@@ -1,0 +1,64 @@
+
+.slider{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 100vw;
+  
+}
+
+
+.arrowback{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    left: 0;
+    padding-top: 215px;
+}
+.arrowback>.MuiSvgIcon-root,.arrowforward>.MuiSvgIcon-root{
+    width: 2vw;
+}
+/* .img>img{
+display: flex;
+justify-content: center;
+width: 96vw;
+height: 44vh;
+margin: 9px auto;
+background-size: 100% 100%;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+} */
+.img{
+    background-image: url("/public/flipkart.avif");
+display: flex;
+justify-content: center;
+width: 96vw;
+height: 430px;
+margin: 9px auto;
+background-size: 100% 100%;
+box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+animation: changeImage 20s  linear infinite;
+cursor: pointer;
+}
+.arrowforward{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    left: 0;
+    padding-top: 215px;
+}
+
+@keyframes changeImage {
+    0%{
+       background-image: url("/public/laptopslider.jpg"); 
+    }
+    25%{
+       background-image: url("/public/cameraslider.jpg"); 
+    }
+    50%{
+       background-image: url("/public/headphoneslider.jpg"); 
+    }
+    60%{
+       background-image: url("/public/watchslider.jpeg"); 
+    }
+    
+}

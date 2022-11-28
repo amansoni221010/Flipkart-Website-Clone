@@ -1,0 +1,41 @@
+
+
+
+
+
+
+.card{
+    background-color: rgba(128, 46, 46, 0.144);
+    /* background-color: yellow; */
+    padding: 5px 15px;
+ 
+margin-top: 23px;
+   
+}
+.cards{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.card-element{
+    width: 18vw;
+    
+    display: inline-flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    margin: 3px 6px;
+    /*  */
+    
+}
+.card-element>img{
+    height: 27vh;
+    width: 18vw;
+
+}
+.lines>p{
+    text-align: center;
+    
+font-size: 13px;
+font-weight: 600;
+}
