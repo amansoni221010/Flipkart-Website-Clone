@@ -2,6 +2,7 @@ import { Dialog ,Box, TextField, Typography, Button, styled} from '@mui/material
 import { height } from '@mui/system';
 import {useState, React} from 'react'
  import { authenticateSignup } from '../../service/api';
+ import { authenticateLogin } from '../../service/api';
 const Component=styled(Box)`
 height: 70vh;
 width: 90vh;
@@ -88,12 +89,17 @@ const signupInitialValues={
     password: '',
     phone: '',
 }
+const loginInitialValues={
+    username: '',
+    password: '',
+}
 
 
 export default function LoginDialog({open,setOpen}) {
 
         const [account, toggleAccount]=useState(accountInitialValues.login);
-        const[ signup,setSignup]=useState(signupInitialValues)
+        const[ signup,setSignup]=useState(signupInitialValues);
+        const[ login,setLogin]=useState(loginInitialValues);
 
     const handleClose=()=>{
         setOpen(false);
@@ -118,7 +124,15 @@ export default function LoginDialog({open,setOpen}) {
         handleClose();
 
     }
+    const onValueChange=(e)=>{
+        setLogin({...login,[e.target.name]: e.target.value});
+    }
 
+    const loginUser= async ()=>{
+         let response = await authenticateLogin(login);
+         if(!response) return;
+        handleClose();
+    }
 
   return (
     <Dialog open={open} onClose={handleClose} PaperProps={ {sx : {maxWidth: 'unset'}}}>
@@ -138,10 +152,10 @@ export default function LoginDialog({open,setOpen}) {
             {
                 account.view==='login'?
             <Wrapper>
-                <TextField variant="standard" label="Enter Email/Mobile number"/>
-                <TextField variant="standard" label="Enter Password"/>
+                <TextField variant="standard"  onChange={(e)=>onValueChange(e)}  name="username" label="Enter Email/Mobile number"/>
+                <TextField variant="standard" onChange={(e)=>onValueChange(e)}  name="password" label="Enter Password"/>
                 <Text>By continuing,you are agree to Flipkart's Terms of Use and Privacy Policy.</Text>
-                <LoginButton>Login</LoginButton>
+                <LoginButton onClick={()=>loginUser()}>Login</LoginButton>
                 <Typography style={{
                     textAlign: 'center' 
                 }}>Or</Typography>

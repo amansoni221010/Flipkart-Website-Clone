@@ -6,8 +6,9 @@ import CardGiftcardIcon from '@mui/icons-material/CardGiftcard';
 import StoreIcon from '@mui/icons-material/Store';
 import './Login.css'
 export default function Login() {
+   
   return (
-    <div className='logintab'>
+    <div className='logintab' >
         <div className="log_in">
             <p className='nc'>New Customer?</p>
             <p className='su'>Sign Up</p>
