@@ -13,6 +13,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import DetailVeiw from './MyComponents/details/DetailVeiw';
 import Footer from './MyComponents/Footer';
 
+
 function App() {
 
 
@@ -32,7 +33,9 @@ function App() {
         <Route path='/product/:id' element={<DetailVeiw/>}/>
         </Routes>
     </Box>
+  
    <Footer/>
+ 
     
 </BrowserRouter>
     

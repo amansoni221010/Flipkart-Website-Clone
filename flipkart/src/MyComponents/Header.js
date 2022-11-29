@@ -7,6 +7,7 @@ import Tippy from "@tippyjs/react";
 import "tippy.js/dist/tippy.css"; // optional
 import MoreT from "./MoreT";
 import Login from "./Login";
+
 // import { useEffect} from "react";
 
 import alanBtn from "@alan-ai/alan-sdk-web";
@@ -37,6 +38,7 @@ export default function Header() {
       },
     });
   }, []);
+
 
   return (
     <>

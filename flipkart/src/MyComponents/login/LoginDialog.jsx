@@ -9,7 +9,7 @@ width: 90vh;
 
 `
 const Image=styled(Box)`
-height: 80%;
+height: 82%;
 width: 28%;
 background: #2874f0
 url(https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png) center 85%  no-repeat;

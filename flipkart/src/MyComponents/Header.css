@@ -23,6 +23,7 @@
 
 .header__first1{
     cursor:  pointer;
+    margin-top: -5px;
 }
 
 .header__second{
@@ -96,4 +97,8 @@ color: white;
     cursor: pointer;
     text-decoration: underline white;
     
+}
+
+.header__fifth,.header__second,.header__third,.header__third1,.header__fourth,.header__fifth{
+    margin: 0 20px;
 }
