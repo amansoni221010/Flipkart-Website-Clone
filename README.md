@@ -9,8 +9,8 @@ See product detail<br>
 
 **Tools and Technnology used**:<br>
 ReactJS<br>
-Node js<br>
-MongoDb<br>
+NodeJS<br>
+MongoDB<br>
 
 
 
