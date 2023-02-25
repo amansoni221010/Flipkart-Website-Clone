@@ -1,7 +1,6 @@
 # Flipkart-Website-Clone
 
 **Flipkart e-commerce website clone using react in which user can do the following:**<br>
-Login/SignUp<br>
 Login/Signup<br>
 Add item in the cart and place order<br>
 See banner adds<br>
